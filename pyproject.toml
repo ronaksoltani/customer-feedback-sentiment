@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer-feedback-sentiment-tagger"
+version = "1.0.0"
+description = "Label English customer feedback and summarize negative-review themes."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["textblob>=0.18"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["customer_feedback_sentiment*"]
